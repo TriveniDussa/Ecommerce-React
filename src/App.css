@@ -1,0 +1,136 @@
+/* App.css */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: linear-gradient(to right, #dbeafe, #f0f9ff);
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.nav{
+  background-color: #1e293b;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-top: -350px;
+  width: 1500px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav a:hover{
+  color: #38bdf8;
+}
+
+/* Form */
+
+.form{
+  width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+
+.form input{
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form input:focus{
+  border-color: #38bdf8;
+  box-shadow: 0 0 5px rgba(56,189,248,0.5);
+}
+
+/* Button */
+
+.btn{
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0ea5e9;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  background-color: #0284c7;
+}
+
+/* Paragraph */
+
+.form p{
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Links */
+
+.form a{
+  text-decoration: none;
+  color: #0284c7;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.form a:hover{
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 500px){
+  .form{
+    width: 90%;
+    padding: 20px;
+  }
+
+  .nav{
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.card{
+  width: 350px;
+  border: 2px solid black;
+  
+}
+.image{
+  width: 100%;
+  height: 200px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}

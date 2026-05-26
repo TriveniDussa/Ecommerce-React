@@ -1,0 +1,163 @@
+/* ProductDetails.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #d9d9d9, #f1f1f1);
+}
+
+/* Main Container */
+.details-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Product Details Card */
+.details-card {
+  width: 100%;
+  max-width: 1100px;
+  background: #111827;
+  border-radius: 25px;
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow Effect */
+.details-card::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 140, 255, 0.2);
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  filter: blur(60px);
+}
+
+/* Left Side Image */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.image-section img {
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+  transition: 0.4s ease;
+}
+
+.image-section img:hover {
+  transform: scale(1.05);
+}
+
+/* Right Side Content */
+.content-section {
+  flex: 1;
+  color: white;
+  z-index: 2;
+}
+
+.content-section h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.content-section h4 {
+  font-size: 20px;
+  color: #38bdf8;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.content-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #d1d5db;
+  margin-bottom: 25px;
+}
+
+/* Price */
+.price {
+  font-size: 30px;
+  color: #22c55e;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  gap: 15px;
+}
+
+/* Common Button Style */
+.btn-group button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Back Button */
+.back-btn {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Add To Cart Button */
+.cart-btn {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+}
+
+.cart-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .details-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .image-section img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .content-section h1 {
+    font-size: 26px;
+  }
+
+  .btn-group {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

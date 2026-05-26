@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full page background */
+body {
+  min-height: 100vh;
+  background: #dce8f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Card wrapper */
+.form-wrapper {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 2.2rem;
+  width: 300px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+/* Title */
+.form-wrapper h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #1a2035;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* All inputs */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a2035;
+  background: #edf0f5;
+  outline: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.form input:focus {
+  background: #fff;
+  box-shadow: 0 0 0 1.5px #1a6fae;
+}
+
+.form input::placeholder {
+  color: #9aa3b5;
+  font-size: 13px;
+}
+
+/* Terms & Conditions checkbox row */
+.tc-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0.1rem 0;
+}
+
+.tc-row input[type="checkbox"] {
+  accent-color: #1a6fae;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.tc-row label {
+  font-size: 12px;
+  color: #7a86a1;
+}
+
+.tc-row a {
+  color: #1a6fae;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* Sign Up / Submit button */
+.btn {
+  width: 100%;
+  padding: 11px;
+  border-radius: 50px;
+  border: none;
+  background: #1a6fae;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  margin-top: 0.3rem;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+  background: #155a91;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Bottom switch link */
+.form p {
+  text-align: center;
+  font-size: 12.5px;
+  color: #7a86a1;
+  margin-top: 0.5rem;
+}
+
+.form p a {
+  color: #1a6fae;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.form p a:hover {
+  text-decoration: underline;
+}
