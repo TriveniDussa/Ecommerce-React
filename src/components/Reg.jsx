@@ -46,6 +46,7 @@ function Reg() {
   return (
     <div>
         <form className='form' onSubmit={handleSubmit}>
+            <h1 className="title">Register</h1>
             <input type="text" placeholder='Enter Name' onChange={(event)=>setname(event.target.value)} value={name}/>
             <input type="email" placeholder='Enter email' onChange={(event)=>setemail(event.target.value)} value={email}/>
             <input type="number" placeholder='Enter Number' onChange={(event)=>setnumber(event.target.value)} value={number}/>
