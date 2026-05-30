@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {Link, redirect} from 'react-router-dom'
 // for redirecting
 import { useNavigate } from 'react-router-dom';
+import "./Register.css";
 
 
 function Reg() {
